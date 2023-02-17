@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  font-size: 16px;
 }
 body {
   margin: 0;
@@ -26,6 +25,15 @@ h3 {
   font-size: 1.5rem;
 }
 
+img {
+  width: 200px;
+  height: auto;
+}
+
+nav {
+  margin-bottom: 2rem;
+}
+
 nav li {
   list-style: none;
   display: inline-block;
@@ -35,16 +43,6 @@ nav li a {
   color: black;
   font-size: 1.5rem;
   padding: 3rem;
-}
-
-nav {
-  margin-bottom: 2rem;
-}
-
-#team-members {
-  background: url("./pics/hintergrund-team.jpg") no-repeat;
-  background-size: cover;
-  display: flex;
 }
 
 #mission {
@@ -66,22 +64,77 @@ nav {
   padding-bottom: 1rem;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 #portfolio-items {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .portfolio-item {
-  max-width: 30%;
-  margin: 1rem;
+  flex: 1 1 0px;
   display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.item-content {
+  font-size: 1.5rem;
+  display: inline;
+  padding: 1.5rem;
+}
+
+#team {
+  margin-top: 5rem;
+}
+
+#team h2 {
+  margin-bottom: 1rem;
+}
+
+#team-members {
+  background: url("./pics/hintergrund-team.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .team-member {
   color: #ebeced;
+  max-width: 250px;
+  text-shadow: 0 0 3px black;
+}
+
+.team-member h3 {
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.team-member p {
+  margin-top: 0;
+  font-size: 1.4rem;
+}
+
+footer {
+  margin-bottom: 2rem;
+}
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+footer p {
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+address {
+  line-height: 2rem;
+  font-style: normal;
+  font-weight: bold;
 }
